@@ -1,0 +1,4 @@
+<h1>Product Details</h1>
+<%= link_to "Home", root_path %> | <%= link_to "New Product", "/products/new" %> | <%= link_to "Edit Product", edit_product_path %>
+
+<p><%= @product[:name] %>, <%= @product[:description] %>, <%= @product[:price_in_cents] %></p>
