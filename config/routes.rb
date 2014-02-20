@@ -8,6 +8,8 @@ Rainforest::Application.routes.draw do
   get "users/new"
   get "users/create"
   
+  get "products/search"
+
   resources :products do
     resources :reviews, :except => [:index]
   end
